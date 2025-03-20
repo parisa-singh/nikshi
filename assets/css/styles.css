@@ -76,7 +76,7 @@ nav ul li a {
 
 .semicircle {
     position: absolute;
-    left: -145px; 
+    left: -215px; 
     top: 35%;
     transform: translateY(-50%);
     width: 800px;
@@ -90,7 +90,7 @@ nav ul li a {
     position: relative;
     z-index: 2;
     bottom: 40px;
-    left: -40px;
+    left: -30px;
 }
 
 /* Right Side ("Nikshi" Image) */
@@ -99,7 +99,7 @@ nav ul li a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 70px;
     padding-bottom: 50px;
     
 }
