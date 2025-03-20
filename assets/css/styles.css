@@ -216,12 +216,13 @@ nav ul li a {
     .nikshi-image {
         max-width: 90%;
         height: auto;
+        padding-top: 70px;
     }
 
     .semicircle {
-        width: 500px;
-        height: 500px;
-        left: 0;
+        width: 600px;
+        height: 600px;
+        left: -25px;
         top: 20%;
     }
 
