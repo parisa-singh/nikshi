@@ -181,27 +181,31 @@ nav ul li a {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 10px;
     }
 
     nav ul {
         flex-direction: column;
+        gap: 15px;
         padding-left: 0;
-        gap: 20px;
     }
 
     .donate-btn {
         margin-top: 10px;
     }
+}
 
+@media screen and (max-width: 1024px) {
     .hero {
         flex-direction: column;
         height: auto;
         text-align: center;
+        padding: 30px 3%;
     }
 
     .hero-left, .hero-right {
@@ -210,57 +214,24 @@ nav ul li a {
     }
 
     .nikshi-image {
-        max-width: 100%;
+        max-width: 90%;
+        height: auto;
     }
 
     .semicircle {
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         left: 0;
+        top: 20%;
     }
 
     .circular-imgs {
         width: 300px;
         height: 300px;
     }
-
-    .mission-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mission-box {
-        width: 90%;
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
-    nav ul {
-        padding-left: 200px;
-        gap: 30px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-left, .hero-right {
-        width: 100%;
-        text-align: center;
-    }
-
-    .semicircle {
-        width: 600px;
-        height: 600px;
-    }
-
-    .circular-imgs {
-        width: 350px;
-        height: 350px;
-    }
-
     .mission-container {
         flex-wrap: wrap;
         justify-content: center;
@@ -272,34 +243,14 @@ nav ul li a {
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .hero {
-        padding: 50px 10%;
-    }
-
+@media screen and (max-width: 768px) {
     .mission-container {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     .mission-box {
-        width: 30%;
+        width: 90%;
     }
 }
 
-body {
-    font-size: 16px;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .mission h2 {
-        font-size: 28px;
-    }
-
-    .mission-box h3 {
-        font-size: 18px;
-    }
-}
