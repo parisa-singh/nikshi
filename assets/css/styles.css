@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Golda Display';
-    src: url('../fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype'); 
-    src: url('../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype'); 
+    src: url('../fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC-opsz-wdth-wght.ttf') format('truetype'); 
+    src: url('../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC-opsz-wdth-wght.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -181,3 +181,125 @@ nav ul li a {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .donate-btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nikshi-image {
+        max-width: 100%;
+    }
+
+    .semicircle {
+        width: 400px;
+        height: 400px;
+        left: 0;
+    }
+
+    .circular-imgs {
+        width: 300px;
+        height: 300px;
+    }
+
+    .mission-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        padding-left: 200px;
+        gap: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .semicircle {
+        width: 600px;
+        height: 600px;
+    }
+
+    .circular-imgs {
+        width: 350px;
+        height: 350px;
+    }
+
+    .mission-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mission-box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 50px 10%;
+    }
+
+    .mission-container {
+        justify-content: space-between;
+    }
+
+    .mission-box {
+        width: 30%;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .mission h2 {
+        font-size: 28px;
+    }
+
+    .mission-box h3 {
+        font-size: 18px;
+    }
+}
